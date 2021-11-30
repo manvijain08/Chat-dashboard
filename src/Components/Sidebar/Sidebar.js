@@ -5,9 +5,8 @@ import fb from "../../Assets/fb.png";
 import instagram from "../../Assets/instagram.png";
 import wp from "../../Assets/wp.png";
 import search from "../../Assets/search.png";
-import profile from "../../Assets/profile.png";
-import outgoing from "../../Assets/outgoing.png";
-import smallA from "../../Assets/smallA.png";
+import Sidebardata from "./Sidebardata.json";
+import ChatItem from "./ChatItem";
 
 const Sidebar = () => {
   return (
@@ -26,25 +25,15 @@ const Sidebar = () => {
         <h3>Chats</h3>
         <img src={search} alt="search" />
       </div>
-
-      <div className="box">
-        <div className="time">
-          <img className="apple-icon" src={smallA} alt="apple-icon" />
-          <p>11:33 pm</p>
-        </div>
-
-        <div className="inner-chats">
-          <div>
-            <img className="profile-chats" src={profile} alt="profile" />
-          </div>
-
-          <div className="content">
-            <h3 className="content-heading">SP_Name</h3>
-            <p className="content-para">Lorem ipsum is simply..</p>
-          </div>
-          <img className="arrow" src={outgoing} alt="outgoing-message" />
-        </div>
-      </div>
+      {Sidebardata.map((data) => (
+        <ChatItem
+          c_name= {data.c_name}
+          message_body={data.message_body}
+          identifier={data.identifier}
+          time={data.time}
+          arrow={data.arrow}
+        />
+      ))}
     </div>
   );
 };

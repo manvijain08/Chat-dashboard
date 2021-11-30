@@ -1,0 +1,33 @@
+[
+    {
+        "c_name": "Manvi Jain",
+        "message_body": "Hey! How are you?",
+        "identifier": "apple",
+        "time": "11:33 pm",
+        "arrow": "outgoingLight" 
+    },
+
+    {
+        "c_name": "Mihir Verma",
+        "message_body": "Hey! How are you?",
+        "identifier": "Whatsapp",
+        "time": "10:00 pm",
+        "arrow": "outgoingLight" 
+    },
+
+    {
+        "c_name": "Yash Sharma",
+        "message_body": "Hey! How are you?",
+        "identifier": "Messanger",
+        "time": "8:30 pm",
+        "arrow": "outgoingLight" 
+    },
+
+    {
+        "c_name": "anvi Jain",
+        "message_body": "Hey! How are you?",
+        "identifier": "instagram",
+        "time": "7:30 pm",
+        "arrow": "outgoingLight" 
+    }
+]
