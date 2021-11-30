@@ -1,0 +1,29 @@
+.header{
+    background-color: #130A44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+
+    .header-logo{
+        // margin-left: 30px;
+    }
+
+    .header-profile{
+        display: flex;
+        align-items: center;
+        .profile-picture{
+            margin-right: 20px;
+        }
+        .profile-name{
+            color: #ffffff;
+
+            .header-heading{
+                margin: 0;
+            }
+            .header-para{
+                margin: 0;
+            }
+        }
+    }
+}
