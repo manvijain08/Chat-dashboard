@@ -1,15 +1,13 @@
 import React from "react";
-import apple from "../../Assets/apple.png";
-import fb from "../../Assets/fb.png";
-import instagram from "../../Assets/instagram.png";
-import wp from "../../Assets/wp.png";
-import search from "../../Assets/search.png";
+import smallA from "../../Assets/smallA.png";
+import smallfb from "../../Assets/smallfb.png";
+import smalli from "../../Assets/smalli.png";
+import smallW from "../../Assets/smallW.png";
 import profile from "../../Assets/profile.png";
 import incomingDark from "../../Assets/incomingDark.png";
 import incomingLight from "../../Assets/incomingLight.png";
 import outgoingDark from "../../Assets/outgoingDark.png";
 import outgoingLight from "../../Assets/outgoingLight.png";
-import smallA from "../../Assets/smallA.png";
 
 const ChatItem = ({ c_name, message_body, identifier, time, arrow }) => {
   return (
