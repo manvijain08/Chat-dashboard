@@ -16,11 +16,16 @@ const ChatItem = ({
   selectedChat,
   setSelectedChat,
 }) => {
-  const openChatHandler= () => {
-    setSelectedChat(conversation_id)
-  }
+  const openChatHandler = () => {
+    setSelectedChat(conversation_id);
+  };
   return (
-    <div className="box" onClick = {openChatHandler}>
+    <div
+      className={`box ${
+        selectedChat == conversation_id ? "box-dark" : "box-light"
+      }`}
+      onClick={openChatHandler}
+    >
       <div className="time">
         <img
           className="apple-icon"
