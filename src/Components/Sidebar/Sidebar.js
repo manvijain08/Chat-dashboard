@@ -1,12 +1,9 @@
 import "./Sidebar.scss";
 import React, {useState, useEffect} from "react";
-import apple from "../../Assets/apple.png";
-import fb from "../../Assets/fb.png";
-import instagram from "../../Assets/instagram.png";
-import wp from "../../Assets/wp.png";
 import search from "../../Assets/search.png";
 import Sidebardata from "./Sidebardata.json";
 import ChatItem from "./ChatItem";
+import _const from "../../const";
 
 const Sidebar = () => {
   const [filter, setFilter] = useState("ALL") ;
@@ -32,10 +29,10 @@ const Sidebar = () => {
       <div className="social-media">
         <div className="icons">
           <span className="all">{filter}</span>
-          <img onClick={() => {filterPreset("APPLE")}} src={apple} alt="apple-icon" />
-          <img onClick={() => {filterPreset("MESSANGER")}} src={fb} alt="fb-icon" />
-          <img onClick={() => {filterPreset("INSTAGRAM")}} src={instagram} alt="instagram-icon" />
-          <img onClick={() => {filterPreset("WHATSAPP")}} src={wp} alt="wp-icon" />
+          <img onClick={() => {filterPreset("APPLE")}} src={_const.APPLE_IMG_CAP} alt="apple-icon" />
+          <img onClick={() => {filterPreset("MESSANGER")}} src={_const.MESSANGER_IMG_CAP} alt="fb-icon" />
+          <img onClick={() => {filterPreset("INSTAGRAM")}} src={_const.INSTAGRAM_IMG_CAP} alt="instagram-icon" />
+          <img onClick={() => {filterPreset("WHATSAPP")}} src={_const.WHATSAPP_IMG_CAP} alt="wp-icon" />
         </div>
       </div>
 
