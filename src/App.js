@@ -13,8 +13,8 @@ function App() {
           path="/"
           element={
             <section className="pages">
-              <Sidebar />
-              <Chats />
+              <Sidebar />{" "}
+              {window.location.includes === "/chat" ? <Chats /> : null}
             </section>
           }
         />
