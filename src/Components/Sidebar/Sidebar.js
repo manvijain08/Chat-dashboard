@@ -28,7 +28,7 @@ const Sidebar = ({selectedChat, setSelectedChat}) => {
     <div className="sidebar">
       <div className="social-media">
         <div className="icons">
-          <span className="all">{filter}</span>
+          <span onClick={() => {filterPreset("ALL")}} className="all">All</span>
           <img onClick={() => {filterPreset("APPLE")}} src={_const.APPLE_IMG_CAP} alt="apple-icon" />
           <img onClick={() => {filterPreset("MESSANGER")}} src={_const.MESSANGER_IMG_CAP} alt="fb-icon" />
           <img onClick={() => {filterPreset("INSTAGRAM")}} src={_const.INSTAGRAM_IMG_CAP} alt="instagram-icon" />
