@@ -2,7 +2,7 @@
     {   "conversation_id": "1",
         "c_name": "Manvi Jain",
         "message_body": "Hey! How are you?",
-        "identifier": "apple",
+        "identifier": "APPLE",
         "time": "11:33 pm",
         "arrow": "outgoingLight" 
     },
@@ -10,7 +10,7 @@
     {   "conversation_id": "2",
         "c_name": "Mihir Verma",
         "message_body": "Hey! How are you?",
-        "identifier": "Whatsapp",
+        "identifier": "WHATSAPP",
         "time": "10:00 pm",
         "arrow": "outgoingLight" 
     },
@@ -18,7 +18,7 @@
     {   "conversation_id": "3",
         "c_name": "Yash Sharma",
         "message_body": "Hey! How are you?",
-        "identifier": "Messanger",
+        "identifier": "MESSANGER",
         "time": "8:30 pm",
         "arrow": "outgoingLight" 
     },
@@ -26,7 +26,7 @@
     {   "conversation_id": "4",
         "c_name": "anvi Jain",
         "message_body": "Hey! How are you?",
-        "identifier": "instagram",
+        "identifier": "INSTAGRAM",
         "time": "7:30 pm",
         "arrow": "outgoingLight" 
     }

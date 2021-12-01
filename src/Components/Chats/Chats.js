@@ -49,7 +49,7 @@ const Chats = () => {
             <img src={attachment} alt="attachment"/>
           </div>
 
-          <div className="send-tick">
+          <div className="send">
             <img src= {send} alt="send"/>
           </div>
         </div>
