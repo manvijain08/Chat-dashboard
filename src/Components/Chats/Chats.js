@@ -6,7 +6,7 @@ import emoji from "../../Assets/emoji.png";
 import attachment from "../../Assets/attachment.png";
 import send from "../../Assets/send.png";
 
-const Chats = () => {
+const Chats = ({selectedChat, setSelectedChat, conversation_id, sp_name, sp_num, r_name,r_num, message_body,time}) => {
   return (
     <div className="right-panel">
       <div className="current-profile">
@@ -25,8 +25,7 @@ const Chats = () => {
           <img src={receiver} alt="profile" />
           <div className="msgg-box">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              {message_body}
             </p>
           </div>
         </div>
@@ -34,8 +33,7 @@ const Chats = () => {
         <div className="receiver">
             <div className="msgs-box">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              {message_body}
             </p>
             </div>
             <img src={sender} alt="receiver"/> 

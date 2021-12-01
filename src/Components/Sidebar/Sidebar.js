@@ -5,7 +5,7 @@ import Sidebardata from "./Sidebardata.json";
 import ChatItem from "./ChatItem";
 import _const from "../../const";
 
-const Sidebar = () => {
+const Sidebar = ({selectedChat, setSelectedChat}) => {
   const [filter, setFilter] = useState("ALL") ;
   const [sidebarData, setSidebardata] = useState([]) ;
 
@@ -49,6 +49,8 @@ const Sidebar = () => {
           identifier={data.identifier}
           time={data.time}
           arrow={data.arrow}
+          selectedChat={selectedChat}
+          setSelectedChat={setSelectedChat}
         />
       ))}
     </div>
