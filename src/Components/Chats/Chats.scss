@@ -1,0 +1,63 @@
+.right-panel {
+  width: 72%;
+
+  .current-profile {
+    display: flex;
+    // align-items: center;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    .profile-dp {
+      // margin-right: 20px;
+    }
+    .Cprofile-name {
+      .Cheader-heading {
+        margin: 0;
+      }
+      .Cheader-para {
+        margin: 0;
+      }
+    }
+  }
+
+  .messages {
+    background-color: #f6f6f6;
+
+    .sender {
+      display: flex;
+      justify-content: flex-start;
+
+      .msgg-box {     
+        border-radius: 10px;
+        background-color: #f4f5f7;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 0;
+    }
+}
+
+    .receiver {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #f4f5f7;
+
+      .msgs-box {
+        background-color: #f4f5f7;
+        border: 0.5px solid black;
+        border-radius: 10px 10px 0 10px;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  .send {
+    background-color: #130A44;
+    .emoticon{
+      .attachment {
+
+      }
+
+      .send-tick{
+
+      }
+    }
+  }
+}

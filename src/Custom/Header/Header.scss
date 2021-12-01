@@ -3,15 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 0.5rem 2rem;
 
-    .header-logo{
-        // margin-left: 30px;
-    }
 
     .header-profile{
         display: flex;
         align-items: center;
+
         .profile-picture{
             margin-right: 20px;
         }

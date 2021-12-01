@@ -8,10 +8,12 @@ import incomingDark from "../../Assets/incomingDark.png";
 import incomingLight from "../../Assets/incomingLight.png";
 import outgoingDark from "../../Assets/outgoingDark.png";
 import outgoingLight from "../../Assets/outgoingLight.png";
+import { Link } from "react-router-dom";
 
-const ChatItem = ({ c_name, message_body, identifier, time, arrow }) => {
+const ChatItem = ({ c_name, message_body, identifier, time, arrow, conversation_id }) => {
   return (
-    <div className="box">
+    <Link to = {`/chat/${conversation_id}`}>
+      <div className="box">
       <div className="time">
         <img
           className="apple-icon"
@@ -47,6 +49,7 @@ const ChatItem = ({ c_name, message_body, identifier, time, arrow }) => {
         />
       </div>
     </div>
+    </Link>
   );
 };
 

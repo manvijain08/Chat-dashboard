@@ -27,7 +27,8 @@ const Sidebar = () => {
       </div>
       {Sidebardata.map((data) => (
         <ChatItem
-          conversation_id = {data.conversation_id}
+          key = {data.conversation_id}
+          conversation_id = {data.conversation_id} 
           c_name= {data.c_name}
           message_body={data.message_body}
           identifier={data.identifier}
@@ -40,3 +41,13 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+// img === "apple"
+//               ? smallA
+//               : img === "fb"
+//               ? smallfb
+//               : img === "instagram"
+//               ? smalli
+//               : img === "wp"
+//               ? smallW
+//               : null
