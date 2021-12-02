@@ -4,9 +4,9 @@ import receiver from "../../Assets/receiver.png";
 const Other = ({ msgBody }) => {
   return (
     <div className="sender">
-      <img src={receiver} alt="profile" />
+      <img className="receiver-dp" src={receiver} alt="profile" />
       <div className="msgg-box">
-        <p>{msgBody}</p>
+        <p className="receiver-msg">{msgBody}</p>
       </div>
     </div>
   );

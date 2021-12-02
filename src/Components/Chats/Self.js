@@ -7,7 +7,7 @@ const Self = ({ msgBody }) => {
       <div className="msgs-box">
         <p>{msgBody}</p>
       </div>
-      <img src={sender} alt="receiver" />
+      <img className="sender-dp" src={sender} alt="receiver" />
     </div>
   );
 };

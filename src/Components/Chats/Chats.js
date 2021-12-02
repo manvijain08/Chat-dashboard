@@ -18,7 +18,7 @@ const Chats = ({ selectedChat }) => {
         </div>
         <div className="Cprofile-name">
           <h3 className="Cheader-heading">Sp_name</h3>
-          <p className="Cheader-para">Profession</p>
+          <p className="Cheader-heading">Profession</p>
         </div>
       </div>
 
@@ -39,11 +39,11 @@ const Chats = ({ selectedChat }) => {
       <div className="send">
         <div className="emoticon">
           <div className="attachment">
-            <img src={emoji} alt="emoticon" />
+            <img className="emoji" src={emoji} alt="emoticon" />
             <img src={attachment} alt="attachment" />
           </div>
 
-          <div className="send">
+          <div className="send-tick">
             <img src={send} alt="send" />
           </div>
         </div>
