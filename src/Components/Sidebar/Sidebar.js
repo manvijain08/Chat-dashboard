@@ -29,10 +29,10 @@ const Sidebar = ({selectedChat, setSelectedChat}) => {
       <div className="social-media">
         <div className="icons">
           <span onClick={() => {filterPreset("ALL")}} className="all">All</span>
-          <img onClick={() => {filterPreset("APPLE")}} src={_const.APPLE_IMG_CAP} alt="apple-icon" />
-          <img onClick={() => {filterPreset("MESSANGER")}} src={_const.MESSANGER_IMG_CAP} alt="fb-icon" />
-          <img onClick={() => {filterPreset("INSTAGRAM")}} src={_const.INSTAGRAM_IMG_CAP} alt="instagram-icon" />
-          <img onClick={() => {filterPreset("WHATSAPP")}} src={_const.WHATSAPP_IMG_CAP} alt="wp-icon" />
+          <img id="apple-icon" onClick={() => {filterPreset("APPLE")}} src={_const.APPLE_IMG_CAP} alt="apple-icon" />
+          <img id="apple-icon" onClick={() => {filterPreset("MESSANGER")}} src={_const.MESSANGER_IMG_CAP} alt="fb-icon" />
+          <img id="apple-icon" onClick={() => {filterPreset("INSTAGRAM")}} src={_const.INSTAGRAM_IMG_CAP} alt="instagram-icon" />
+          <img id="apple-icon" onClick={() => {filterPreset("WHATSAPP")}} src={_const.WHATSAPP_IMG_CAP} alt="wp-icon" />
         </div>
       </div>
 

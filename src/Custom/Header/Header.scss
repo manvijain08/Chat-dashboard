@@ -5,6 +5,10 @@
     align-items: center;
     padding: 0.5rem 2rem;
 
+    .header_logo {
+        // height: 80px;
+    }
+
 
     .header-profile{
         display: flex;
@@ -12,6 +16,7 @@
 
         .profile-picture{
             margin-right: 20px;
+            cursor: pointer;
         }
         .profile-name{
             color: #ffffff;

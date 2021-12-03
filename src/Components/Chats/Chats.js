@@ -41,6 +41,7 @@ const Chats = ({ selectedChat }) => {
           <div className="attachment">
             <img className="emoji" src={emoji} alt="emoticon" />
             <img src={attachment} alt="attachment" />
+            <p>Type your message here...</p>
           </div>
 
           <div className="send-tick">

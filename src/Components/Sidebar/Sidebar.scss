@@ -1,11 +1,17 @@
 .sidebar {
   padding: 1.5rem;
+  width: 20rem;
   .social-media {
     .icons {
       display: flex;
       justify-content: space-evenly;
       cursor: pointer;
       align-items: center;
+
+      #apple-icon{
+        height: 1.5rem;
+      }
+
       .all {
         font-size: 20px;
       }
@@ -20,7 +26,6 @@
   }
   .box {
     cursor: pointer;
-    width: 25rem;
     border-radius: 20px;
     padding: 20px 2rem;
     margin: 1rem 0;

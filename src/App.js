@@ -4,12 +4,17 @@ import Header from "./Custom/Header/Header";
 import Chats from "./Components/Chats/Chats";
 import { useState } from "react";
 import msgData from "./Components/Chats/messages.json";
+import ProfileCard from "./Components/ProfileCard/ProfileCard";
 
 function App() {
   const [selectedChat, setSelectedChat] = useState(0);
+  const [profileCardVisible, setProfileCardVisible] = useState(false);
   return (
     <div>
-      <Header />
+      <Header
+        profileCardVisible={profileCardVisible}
+        setProfileCardVisible={setProfileCardVisible}
+      />
       <section className="pages">
         <Sidebar
           selectedChat={selectedChat}
@@ -34,6 +39,7 @@ function App() {
                 );
               }
             })}
+        {profileCardVisible ? <ProfileCard /> : null}
       </section>
     </div>
   );

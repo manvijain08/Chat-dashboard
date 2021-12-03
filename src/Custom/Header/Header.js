@@ -1,9 +1,9 @@
 import "./Header.scss";
 import React from "react";
-import logo from "../../Assets/logo.png";
-import profile from "../../Assets/profile.png";
+import logo from "../../Assets/logo-1.png";
+import profile from "../../Assets/header-profile.png";
 
-const Header = () => {
+const Header = ({profileCardVisible, setProfileCardVisible}) => {
   return (
     <div className="header">
       <div className="header-logo">
@@ -11,11 +11,11 @@ const Header = () => {
       </div>
 
       <div className="header-profile">
-        <div className="profile-picture">
+        <div onClick = {() => setProfileCardVisible(!profileCardVisible)} className="profile-picture">
           <img src={profile} alt="profile" />
         </div>
         <div className="profile-name">
-          <h3 className="header-heading">Sp_name</h3>
+          <h4 className="header-heading">Sp_name</h4>
           <p className="header-para">Profession</p>
         </div>
       </div>
